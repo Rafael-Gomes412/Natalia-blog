@@ -143,9 +143,29 @@ section#contact p {
 }
 
 @media (max-width: 999px) {
+    #cv {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrage des éléments */
+        gap: 20px; /* Espacement entre les sections */
+    }
+
     #cv .container {
-        width: 75%; /* Sur les petits écrans, chaque section prendra 100% de la largeur */
-        margin-right: 0;
-        margin-bottom: 15px; /* Espace entre les sections */
+        width: 90%; /* Augmenter la largeur pour une meilleure lisibilité */
+        max-width: 500px; /* Éviter que ça devienne trop large sur tablette */
+        margin: 0 auto; /* Centrage horizontal */
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet élégant */
+        border-radius: 10px; /* Arrondir les bords */
+        background: #fff; /* Fond blanc pour un contraste propre */
+    }
+
+    #cv .button {
+        display: block; /* Met le bouton en pleine largeur */
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
     }
 }
+
